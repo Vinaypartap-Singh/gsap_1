@@ -49,15 +49,25 @@ nav ul li a:hover {
   justify-content: center;
   position: relative;
   flex-direction: column;
-  max-width: 900px;
+  max-width: fit-content;
   margin: auto;
 }
 
+.hero_title_cover {
+  /* background: red; */
+  overflow-y: hidden;
+  z-index: 99;
+}
+
 .hero_title {
-  font-size: 8rem;
+  font-size: 8vw;
   text-align: start;
   font-weight: 600;
   z-index: 3;
+}
+
+#gsapText {
+  color: #1e1e1e;
 }
 
 .hero_title:nth-child(2) {
@@ -120,4 +130,13 @@ nav ul li a:hover {
 
 #page4 {
   height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#page4 h1 {
+  color: #1e1e1e;
 }

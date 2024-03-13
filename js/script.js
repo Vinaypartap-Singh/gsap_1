@@ -1,3 +1,23 @@
+const allH1 = document.querySelectorAll("#page4 h1");
+allH1.forEach((elem) => {
+  var clutter = "";
+  const text = elem.textContent;
+  const spilltedText = text.split("");
+  spilltedText.forEach((letter) => {
+    clutter += `<span>${letter}</span>`;
+  });
+
+  elem.innerHTML = clutter;
+});
+
+const gsapText = document.getElementById("gsapText");
+const splitText = gsapText.textContent.split("");
+var gsapClutter = "";
+splitText.forEach((letter) => {
+  gsapClutter += `<span>${letter}</span>`;
+});
+gsapText.innerHTML = gsapClutter;
+
 const tl = gsap.timeline();
 
 tl.from(".brand_name", {
@@ -14,10 +34,14 @@ tl.from(".nav_item", {
 });
 
 tl.from(".hero_title", {
-  x: -500,
-  duration: 1,
+  y: 150,
   opacity: 0,
-  fontWeight: 200,
+  stagger: 0.4,
+});
+
+tl.to("#gsapText span", {
+  color: "#e4e4e4",
+  textTransform: "uppercase",
   stagger: 0.4,
 });
 
@@ -50,7 +74,7 @@ tl.to(".page2_img", {
     scroller: "body",
     start: "top 0%",
     end: "-140%",
-    scrub: 10,
+    scrub: 2,
     pin: true,
   },
 });
@@ -62,7 +86,21 @@ tl.to("#page3 h1", {
     scroller: "body",
     start: "top 0%",
     end: "top 80%",
-    scrub: 10,
+    scrub: 2,
     pin: true,
+  },
+});
+
+tl.to("#page4 h1 span", {
+  color: "white",
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: "#page4",
+    scroller: "body",
+    start: "top 0%",
+    end: "top -10%",
+    scrub: 3,
+    pin: true,
+    markers: true,
   },
 });
