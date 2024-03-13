@@ -42,15 +42,15 @@ tl.to("#page2", {
   },
 });
 
-tl.to("#page2 img", {
+tl.to(".page2_img", {
   duration: 3,
   width: "100%",
   scrollTrigger: {
     trigger: "#page2",
     scroller: "body",
     start: "top 0%",
-    end: "-100%",
-    scrub: 2,
+    end: "-140%",
+    scrub: 10,
     pin: true,
   },
 });
@@ -62,7 +62,7 @@ tl.to("#page3 h1", {
     scroller: "body",
     start: "top 0%",
     end: "top 80%",
-    scrub: 2,
+    scrub: 10,
     pin: true,
   },
 });
