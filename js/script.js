@@ -54,3 +54,15 @@ tl.to("#page2 img", {
     pin: true,
   },
 });
+
+tl.to("#page3 h1", {
+  transform: "translateX(-170%)",
+  scrollTrigger: {
+    trigger: "#page3",
+    scroller: "body",
+    start: "top 0%",
+    end: "top 80%",
+    scrub: 2,
+    pin: true,
+  },
+});

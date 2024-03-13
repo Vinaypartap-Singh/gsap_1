@@ -10,6 +10,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 a {
@@ -98,9 +99,6 @@ nav ul li a:hover {
 }
 
 #page3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100dvh;
   /* background-color: #f1f1f1; */
 }
@@ -113,4 +111,9 @@ nav ul li a:hover {
   width: 300px;
   height: 100%;
   object-fit: cover;
+}
+
+#page3 h1 {
+  font-size: 42vw;
+  margin-left: 30vw;
 }
