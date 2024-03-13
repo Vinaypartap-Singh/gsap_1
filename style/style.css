@@ -96,3 +96,21 @@ nav ul li a:hover {
   height: 100dvh;
   /* background-color: #f1f1f1; */
 }
+
+#page3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  /* background-color: #f1f1f1; */
+}
+
+.page2_title {
+  font-size: 4rem;
+}
+
+.page2_img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+}

@@ -36,8 +36,21 @@ tl.to("#page2", {
     trigger: "#page2",
     scroller: "body",
     scrub: 5,
-    markers: true,
+    // markers: true,
     end: "top 80%",
     start: "top 60%",
+  },
+});
+
+tl.to("#page2 img", {
+  duration: 3,
+  width: "100%",
+  scrollTrigger: {
+    trigger: "#page2",
+    scroller: "body",
+    start: "top 0%",
+    end: "-100%",
+    scrub: 2,
+    pin: true,
   },
 });
