@@ -43,7 +43,7 @@ nav ul li a:hover {
 }
 
 .hero_section {
-  height: calc(100dvh - 190px);
+  height: calc(100dvh - 90px);
   display: flex;
   justify-content: center;
   position: relative;
@@ -87,4 +87,12 @@ nav ul li a:hover {
 .img_holder img:nth-child(3) {
   left: 50%;
   rotate: 10deg;
+}
+
+#page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  /* background-color: #f1f1f1; */
 }

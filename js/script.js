@@ -27,3 +27,17 @@ tl.from(".img_holder img", {
   opacity: 0,
   stagger: 0.4,
 });
+
+tl.to("#page2", {
+  backgroundColor: "white",
+  color: "black",
+  duration: 3,
+  scrollTrigger: {
+    trigger: "#page2",
+    scroller: "body",
+    scrub: 5,
+    markers: true,
+    end: "top 80%",
+    start: "top 60%",
+  },
+});
